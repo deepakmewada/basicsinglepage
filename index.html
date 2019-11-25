@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.css">
+    <style>
+
+    </style>
+</head>
+<body style="margin: 0;">
+    <header>
+        <div><img src="logovectorwhite.png" alt=""></div>
+        <ul>
+            <li><a href="#" id="home">Home</a></li>
+            <li><a href="#" id="about">About</a></li>
+            <li><a href="#" id="service">Service</a></li>
+        </ul>
+    </header>
+    <section style="display: block;width: 100%;height: 100vh;position: relative;overflow:hidden;">
+        <div class="left bg-home"></div>
+        <div class="right bg-home"></div>
+        <div class="left bg-about"></div>
+        <div class="right bg-about"></div>
+        <div class="left bg-service"></div>
+        <div class="right bg-service"></div>
+        <div class="main" id="homecont">
+            <div class="container">
+                <h1> Blah Blah Blah</h1>
+            </div>
+        </div>
+        <div class="main about" id="aboutcont" >
+            <div class="container">
+                <h2> About Us</h2>
+                <p>Company Profile
+                        PMI is a signage manufacturing company, which was established in 2018. We deal with all kinds of signage boards such as Steel, Brass, Acrylic, Wooden, etc. The High Quality of our products speaks of our brand. We have domain expertise which ensure Creative and Quality output.
+                        
+                        Why us
+                        1.Quality Product at reasonable rates
+                        2.Faster product delivery than average signage company
+                        3.We do everything we can do to satisfy our client requirement
+                        
+                        Tagline - We make sure the world notices you!
+                        
+                        
+                        Our mission : We make incredible signages which becomes a great landmark
+                        Our vision : We care deeply about the quality of our products, our products are made from finest materials to ensure they are delivered exceptional quality.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+    $('#about').click(function(){
+        $('body').addClass('about');
+        $('body').removeClass('home');
+        $('body').removeClass('service');
+        $('#homecont').fadeOut();
+        $('#aboutcont').addClass('animated slideInUp');
+    });
+    $('#home').click(function(){
+        $('body').addClass('home');
+        $('body').removeClass('about'); 
+        $('body').removeClass('service');
+        $('#homecont').fadeIn();
+        $('#aboutcont').removeClass('animated slideInUp').addClass('animated slideInDown');
+    });
+    $('#service').click(function(){
+        $('body').addClass('service');
+        $('body').removeClass('about');
+        $('body').removeClass('home');
+    });
+</script>
+</body>
+</html>

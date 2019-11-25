@@ -1,0 +1,50 @@
+.bg-home.left {background: url('bgleft.jpg') right no-repeat;height: 100%;position: absolute;width: 100%;object-fit: cover;right: 50%;background-size: 50%;z-index: 6;}
+.bg-home.right {background: url('bgright.jpg') left no-repeat;height: 100%;position: absolute;width: 100%;left: 50%;background-size: 50%;z-index: 6;}
+.bg-about.left {background: url('aboutbgleft.jpg') right no-repeat; height: 100%;position: absolute;width: 100%;object-fit: cover;right: 50%;background-size: 50%;z-index: 5;}
+.bg-about.right {background: url('aboutbgright.jpg') left no-repeat;  height: 100%;position: absolute;width: 100%;left: 50%;background-size: 50%;z-index: 5;}
+.bg-service.left {background: #333; height: 100%;position: absolute;width: 100%;object-fit: cover;right: 50%;background-size: 50%;z-index: 4;}
+.bg-service.right {background: #333;  height: 100%;position: absolute;width: 100%;left: 50%;background-size: 50%;z-index: 4;}
+
+.about .bg-home.left {transform: translateX(-50%);transition: 0.5s;}
+.about .bg-home.right {transform: translateX(50%);transition: 0.5s;}
+.home .bg-home.left {transform: translateX(0%);transition: 0.5s;}
+.home .bg-home.right {transform: translateX(0%);transition: 0.5s;}
+
+.about .bg-about.left {transform: translateX(0%);transition: 0.5s;}
+.about .bg-about.right {transform: translateX(0%);transition: 0.5s;}
+
+.service .bg-home.left {transform: translateX(-50%);transition: 0.5s;}
+.service .bg-home.right {transform: translateX(50%);transition: 0.5s;}
+.service .bg-about.left {transform: translateX(-50%);transition: 0.5s;}
+.service .bg-about.right {transform: translateX(50%);transition: 0.5s;}
+
+.main {position: relative;z-index: 7;display: block;height: 100%;padding: 100px 40px 40px;color: #fff;text-align: center;}
+.left:before {content: '';background: #333;opacity: 0.5;width: 100%;height: 100%;display: block;}
+.right:before {content: '';background: #333;opacity: 0.5;width: 100%;height: 100%;display: block;}
+body:before {content: '';width: auto;height: auto;border: 1px solid #fff;position: absolute;left: 20px;top: 20px;z-index: 7;bottom: 20px;right: 20px;}
+h1 {margin: 0;}
+body {position: relative;}
+header {position: fixed;z-index: 8;padding: 35px 35px 10px;left: 0;right: 0;display: flex;justify-content: space-between;}
+header div {
+    display: block;
+}
+header div img {width: 80px;}
+header ul {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-items: right;
+    margin: 0;
+    justify-content: center;
+}
+header ul li {
+    margin: 0 15px;
+    display: inline-block;
+    vertical-align: middle;
+    align-items: center;
+    display: flex;
+}
+header ul li a {
+    color: #fff;
+    display: block;
+}
